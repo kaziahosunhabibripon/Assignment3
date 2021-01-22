@@ -1,31 +1,30 @@
   //https://github.com/kaziahosunhabibripon/Assignment3
-  
+
   //First problem
 
   function kilometerToMeter(km) {
-      let meter = km * 1000;
+      var meter = km * 1000;
       if (km < 0) {
-
           return false;
       }
       return meter;
   }
 
-  let result = kilometerToMeter(11);
-  console.log(result);
+  var result = kilometerToMeter();
+
 
   //2nd function budgetCalculator()
 
   function budgetCalculator(watch, phone, laptop) {
       let priceList = [(watch * 50), (phone * 100), (laptop * 500)];
       let total = priceList[0] + priceList[1] + priceList[2];
-      if (total <= 0) {
+      if ((watch < 0) || (phone < 0) || (laptop < 0)) {
           return false;
       }
       return total;
   }
-  let totalPrice = budgetCalculator(0, 0, 1);
-  console.log(totalPrice);
+  let totalPrice = budgetCalculator();
+ 
 
   // 3rd hotelCost
 
@@ -51,8 +50,8 @@
       return price;
   }
 
-  let totalCost = hotelCost(71);
-  console.log(totalCost);
+  let totalCost = hotelCost();
+
 
   // megaFriend
 
@@ -64,7 +63,7 @@
               largerString = friendName[i];
           }
       }
-      if (largerString <= "") {
+      if (friendName == 0) {
           return false;
       }
 
@@ -72,6 +71,7 @@
 
   }
 
-  let friendName = ["Jamal Abedin", "Kamal Buira Khan", "Salman Cutia Rahman", "Balam Faoul Simger", "Hasina Prostitube Baby", "Khaleda Buddhi Khatun"]
+  let friendName = ["Jamal Abedin", "Kamal Buira Khan", "Salman Cutia Rahman", "Balam Faoul Simger", "Hasina Prostitube Baby", "Khaleda Buddhi Khatun"];
   let largestNameString = megaFriend(friendName);
-  console.log(largestNameString);
+
+ 
