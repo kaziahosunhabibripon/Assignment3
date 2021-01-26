@@ -24,7 +24,7 @@
       return total;
   }
   let totalPrice = budgetCalculator();
- 
+
 
   // 3rd hotelCost
 
@@ -35,7 +35,7 @@
       } else if (stay <= 20) {
           let first10Days = (10 * 100);
           let remainDays = (stay - 10);
-          let second10Days = (stay * 80);
+          let second10Days = (remainDays * 80);
           price = (first10Days + second10Days);
       } else {
           let first10Days = (10 * 100);
@@ -73,5 +73,3 @@
 
   let friendName = ["Jamal Abedin", "Kamal Buira Khan", "Salman Cutia Rahman", "Balam Faoul Simger", "Hasina Prostitube Baby", "Khaleda Buddhi Khatun"];
   let largestNameString = megaFriend(friendName);
-
- 
